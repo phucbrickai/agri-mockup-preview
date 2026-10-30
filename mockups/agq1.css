@@ -1,0 +1,36 @@
+/* AG-Q1 · Agent question card — token-only, recolor via tokens.css */
+.agq{background:var(--c-surface);border:1px solid var(--c-border);border-radius:var(--radius-xl);padding:12px;display:flex;flex-direction:column;gap:8px;box-shadow:0 -4px 24px -12px rgba(31,28,25,.18);font-family:var(--font-family-base)}
+.agq-q{display:flex;align-items:flex-start;gap:8px;padding:4px 4px 4px;font-size:15px;line-height:22px;font-weight:600;color:var(--c-text)}
+.agq-q .agq-av{flex:none;width:24px;height:24px;border-radius:50%;background:var(--c-primary-50);color:var(--c-primary-700);display:grid;place-items:center}
+.agq-opts{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;list-style:none}
+.agq-o{width:100%;min-height:52px;display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:var(--radius-md);border:1px solid var(--c-border);background:var(--c-surface);color:var(--c-text);font:500 15px/20px var(--font-family-base);text-align:left;cursor:pointer}
+.agq-o .agq-ic{flex:none;width:32px;height:32px;border-radius:8px;background:var(--c-neutral-100);color:var(--c-neutral-700);display:grid;place-items:center}
+.agq-o .agq-t{flex:1;min-width:0;display:flex;flex-direction:column}
+.agq-o .agq-s{font-size:12px;line-height:16px;font-weight:400;color:var(--c-textMuted)}
+.agq-o .agq-ch{flex:none;color:var(--c-neutral-500)}
+.agq-o.pri{background:var(--c-cta-bg);border:1.5px solid var(--c-cta-border);font-weight:700;box-shadow:var(--shadow-primary)}
+.agq-o.pri .agq-ic{background:rgba(255,255,255,.6);color:var(--c-cta-icon)}
+.agq-o.pri .agq-ch{color:var(--c-primary-800)}
+.agq-o.sel{background:var(--c-cta-bg-pressed);border-color:var(--c-cta-border-pressed);color:var(--c-text)}
+.agq-o.sel .agq-ic{background:rgba(255,255,255,.6);color:var(--c-cta-icon)}
+.agq-o.dim{opacity:.45}
+.agq-in{display:flex;align-items:center;gap:8px;min-height:48px;padding:4px 4px 4px 14px;border-radius:999px;background:var(--c-neutral-100);border:1px solid var(--c-border);margin-top:2px}
+.agq-in span{flex:1;font-size:15px;color:var(--c-textMuted)}
+.agq-in .agq-send{flex:none;width:40px;height:40px;border-radius:50%;background:var(--c-cta-bg);color:var(--c-cta-icon);border:1.5px solid var(--c-cta-border);display:grid;place-items:center;border:none}
+.agq-in .agq-mic{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:var(--c-neutral-700)}
+/* chat thread for tapped state */
+.agq-thread{display:flex;flex-direction:column;gap:8px}
+.agq-me{align-self:flex-end;max-width:85%;padding:10px 14px;border-radius:18px 18px 4px 18px;background:var(--c-primary-100);color:var(--c-text);border:1px solid var(--c-primary-200);font:600 15px/22px var(--font-family-base);display:flex;gap:6px;align-items:center}
+.agq-ai{align-self:flex-start;max-width:88%;display:flex;gap:8px;align-items:flex-start}
+.agq-ai .agq-av{flex:none;width:28px;height:28px;border-radius:50%;background:var(--c-primary-50);color:var(--c-primary-700);display:grid;place-items:center}
+.agq-ai .b{padding:10px 14px;border-radius:4px 18px 18px 18px;background:var(--c-surface);border:1px solid var(--c-border);font-size:15px;line-height:22px;color:var(--c-text)}
+.agq-ai .b small{display:block;margin-top:4px;font-size:12px;color:var(--c-textMuted)}
+.agq-done{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:var(--radius-md);background:var(--c-success-bg-soft);color:var(--c-success-text);font-size:13px;font-weight:600}
+
+/* Olive Earth v2.0 */
+.agq-o.pri,.agq-o.sel{background:var(--c-tint-olive);border:1.5px solid var(--c-primary-300);box-shadow:none;color:var(--c-text)}
+.agq-o.pri .agq-ic,.agq-o.sel .agq-ic{background:#fff;color:var(--c-primary-700)}.agq-o.pri .agq-ch{color:var(--c-primary-700)}
+.agq-in .agq-send{background:var(--c-cta-bg);color:#fff;border:0}
+.agq-me{background:var(--c-primary-50);border-color:var(--c-primary-200)}
+.agq-in .agq-send{background:var(--c-cta-bg)!important;color:var(--c-cta-icon)!important;border:1px solid var(--c-cta-border)!important}
+.agq-o.pri,.agq-o.sel{background:var(--c-chip-on-bg);border-color:var(--c-chip-on-border)}

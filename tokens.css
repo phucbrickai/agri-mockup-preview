@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Inter:wght@400;600;700&display=swap');
+/* Lime s2 v3.0 (2026-10-29, was Olive Earth) — light, simple, farmer-friendly. Single source of truth; no overrides, no gradients. */
+:root{
+  /* olive (brand + CTA) */
+  --c-primary-50:#F4F9E6; --c-primary-100:#EEF7D2; --c-primary-200:#D5E6A8; --c-primary-300:#B8DB62;
+  --c-primary-500:#B2D84E; --c-primary-600:#4A6410; --c-primary-700:#2F4209; --c-primary-800:#26360A; --c-primary-900:#1F2A06;
+  /* leaf green (fresh/organic/success accents) */
+  --c-secondary-50:#E6F2E2; --c-secondary-100:#CFE6C8; --c-secondary-300:#8FC283; --c-secondary-500:#2E6B2F; --c-secondary-600:#2E6B2F; --c-secondary-700:#1F4F21; --c-secondary-900:#123214;
+  --c-accent-harvest:#B84A04; --c-accent-sky:#1F5A96;
+  /* neutrals (warm-grey, olive-tinted) */
+  --c-neutral-0:#FFFFFF; --c-neutral-50:#FAFAF7; --c-neutral-100:#F2F3EE; --c-neutral-200:#E3E5DC; --c-neutral-300:#C9CCBF;
+  --c-neutral-500:#6B705F; --c-neutral-600:#5B6150; --c-neutral-700:#40453A; --c-neutral-800:#262A1F; --c-neutral-900:#1C1F16;
+  --c-background:#FFFFFF; --c-surface:#FFFFFF; --c-surface-alt:#FAFAF7;
+  --c-text:#1C1F16; --c-textMuted:#5B6150; --c-border:#E3E5DC; --c-border-strong:#C9CCBF; --c-ink-dark:#262A1F;
+  /* price & promo (only remaining orange) */
+  --c-price:#B84A04; --c-promo-bg:#FDEBDD; --c-promo-text:#8A3703; --c-discountBg:#FDEBDD;
+  /* tints */
+  --c-tint-olive:#F4F9E6; --c-tint-peach:#F4F9E6; --c-tint-cream:#F4F9E6; --c-hero:#FFFFFF;
+  /* CTA primary */
+  --c-cta-bg:#B2D84E; --c-cta-bg-hover:#A6CF3C; --c-cta-bg-pressed:#9BC433; --c-cta-text:#1F2A06; --c-cta-icon:#1F2A06; --c-cta-border:#7FA62A; --c-cta-border-pressed:#6E9222;
+  /* CTA secondary */
+  --c-cta2-bg:#F4F9E6; --c-cta2-bg-hover:#EEF7D2; --c-cta2-text:#2F4209; --c-cta2-border:#D5E6A8;
+  --c-chip-on-bg:#EEF7D2; --c-chip-on-border:#B8DB62; --c-chip-on-text:#2F4209;
+  /* status: soft bg + dark text (all >= 5.5:1) */
+  --c-success-bg:#CFE6C8; --c-success-bg-soft:#E6F2E2; --c-success-text:#2E6B2F;
+  --c-warning-bg:#F6E3AE; --c-warning-bg-soft:#FBF1D6; --c-warning-text:#7A5200;
+  --c-danger-bg:#F6CFC9;  --c-danger-bg-soft:#FBE7E4;  --c-danger-text:#A1261B;
+  --c-info-bg:#CFE0F1;    --c-info-bg-soft:#E5EEF7;    --c-info-text:#1F5A96;
+  --c-semantic-success:#2E6B2F; --c-semantic-warning:#7A5200; --c-semantic-danger:#A1261B; --c-semantic-info:#1F5A96;
+  /* type */
+  --font-family-base:'Be Vietnam Pro','Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-family-numeric:'Inter','Be Vietnam Pro',sans-serif;
+  --font-size-xs:12px; --font-size-sm:14px; --font-size-md:16px; --font-size-lg:18px; --font-size-xl:20px; --font-size-2xl:24px; --font-size-3xl:30px; --font-size-4xl:38px;
+  --font-weight-regular:400; --font-weight-medium:500; --font-weight-semibold:600; --font-weight-bold:700;
+  --font-lineHeight-tight:1.25; --font-lineHeight-normal:1.5; --font-lineHeight-relaxed:1.65; --font-lineHeight-cardTitle:20px;
+  /* space / radius / shadow (shadows neutral only) */
+  --space-0:0; --space-1:4px; --space-2:8px; --space-3:12px; --space-4:16px; --space-5:20px; --space-6:24px; --space-8:32px; --space-10:40px; --space-12:48px; --space-16:64px;
+  --radius-sm:6px; --radius-md:10px; --radius-lg:14px; --radius-xl:20px; --radius-pill:999px;
+  --shadow-sm:0 1px 2px rgba(28,31,22,.06); --shadow-md:0 2px 8px rgba(28,31,22,.06); --shadow-lg:0 8px 24px rgba(28,31,22,.08); --shadow-primary:0 4px 12px rgba(138,186,48,.28);
+  /* layout */
+  --bp-mobile:375px; --bp-tablet:768px; --bp-desktop:1024px; --bp-wide:1280px; --layout-containerMax:1200px;
+  --layout-gridMargin:12px; --layout-gridGutter:8px; --layout-gridRowGap:12px; --layout-sectionGap:8px;
+  --layout-rowHeight:48px; --layout-rowHeightTwoLine:64px; --layout-buttonHeight:52px; --layout-assistantButton:56px;
+  --layout-bottomNavHeight:56px; --layout-bottomBarHeight:56px; --layout-headerHeight:56px; --layout-tapTargetMin:48px; --layout-cardImageRatio:1/1;
+}
+body{font-family:var(--font-family-base);color:var(--c-text);background:var(--c-background);line-height:var(--font-lineHeight-normal);}

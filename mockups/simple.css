@@ -1,0 +1,68 @@
+/* SIMPLE v1 (2026-10-30) — CEO-approved simplification, applied on top of every screen.
+   Rules: white bg, more whitespace, fewer badges/meta, flat lime primary (one per screen), no gradients/glass/heavy shadows, >=48px targets, Messenger-style chat. */
+body{background:#fff!important}
+.phone{background:#fff!important}
+/* whitespace & flat surfaces */
+.main{padding-left:20px!important;padding-right:20px!important;gap:20px!important}
+.sec{margin-top:0!important;padding:16px 20px!important;background:#fff!important}
+.sec>h2{font-size:18px!important;margin-bottom:12px!important}
+.glass,.tile,.card,.ac,.kpi,.xc,.reel,.agq{box-shadow:none!important;backdrop-filter:none!important;background:#fff!important;border:1px solid var(--c-border)!important}
+.hl-ring{box-shadow:none!important}
+.ib{background:none!important;box-shadow:none!important;backdrop-filter:none!important;width:48px!important;height:48px!important}
+.dock{background:#fff!important;backdrop-filter:none!important;border-top:1px solid var(--c-border)}
+.nav{background:#fff!important;backdrop-filter:none!important;box-shadow:none!important;border-radius:0!important;height:64px!important}
+.nav a.ai .av{background:var(--c-primary-50)!important;color:var(--c-primary-700)!important}
+/* fewer badges / secondary meta */
+.card .ov,.card .rs,.card .dl,.card .farm,.old,.asm,.why,.social,.avs,.live,.role,.ac .chips,.ac .lb .cp{display:none!important}
+.card .b{padding:12px!important;gap:6px!important}.card .t{font-size:15px!important}
+.badge,.cp{background:var(--c-neutral-100)!important;color:var(--c-neutral-700)!important}
+.flash{background:#fff!important;color:var(--c-text)!important;border-top:1px solid var(--c-border);border-bottom:1px solid var(--c-border)}
+.cd{background:var(--c-neutral-100)!important;color:var(--c-text)!important}
+.alert,.alert.y,.alert.g{background:var(--c-neutral-50)!important;color:var(--c-text)!important;border:1px solid var(--c-border)}
+.alert+.alert{display:none!important}
+.tile span.i{background:var(--c-neutral-50)!important;border:1px solid var(--c-border)}
+/* one primary action: only the LAST primary in the bottom bar stays lime; others become quiet text/outline buttons */
+.btn{box-shadow:none!important}
+.cta .btn:not(:last-child),.acts .btn:not(:first-child),.xb2{background:#fff!important;color:var(--c-primary-700)!important;border:1px solid var(--c-border)!important;box-shadow:none!important}
+.phone:has(.cta) .main .btn,.phone:has(.dock .btn.go) .main .btn.go,.phone:has(.xbot) .x .xb{background:#fff!important;color:var(--c-primary-700)!important;border:1px solid var(--c-border-strong)!important;box-shadow:none!important}
+.btn.go,.btn.pri,.cta .btn:last-child,.xb,.btn.block:not(.o){background:var(--c-cta-bg)!important;color:var(--c-cta-text)!important;border:1px solid var(--c-cta-border)!important}
+.btn.go svg,.btn.pri svg{stroke:var(--c-cta-icon)!important}
+.agq-o.pri{background:var(--c-chip-on-bg)!important;font-weight:600}
+/* tap targets >=48px */
+.btn,.chip,.sugg a,.tabs a,.hdr .back,.sec-h a,.agq-o,.agq-in,.xseg span,.pay,.list>*{min-height:48px!important}
+.hdr .back{width:48px!important}
+.agq-in .agq-send,.agq-in .agq-mic{width:48px!important;height:48px!important}
+.hdr{background:#fff!important;color:var(--c-text)!important;border-bottom:1px solid var(--c-border);padding:12px 16px!important}
+/* no gradients */
+.ring{background:none!important;width:100%!important;height:auto!important;display:block!important;border-radius:0!important}
+/* ===== Messenger / Grok-style chat ===== */
+.msg{display:flex;gap:8px;align-items:flex-end}
+.msg .av,.agq-ai .agq-av,.agq-q .agq-av{width:28px!important;height:28px!important;background:var(--c-primary-50)!important;color:var(--c-primary-700)!important;border:0!important}
+.msg .bub,.agq-ai .b{background:#F2F3EE!important;color:var(--c-text)!important;box-shadow:none!important;border:0!important;border-radius:18px 18px 18px 4px!important;padding:10px 14px!important;max-width:78%;font-size:16px;line-height:23px}
+.msg.me .bub,.agq-me{background:#EEF7D2!important;color:#1F2A06!important;border:0!important;border-radius:18px 18px 4px 18px!important;max-width:78%;margin-left:auto}
+.msg .bub .cp{display:none!important}
+.agq{border:0!important;padding:0!important;background:#fff!important}
+.agq-q{font-weight:400!important;font-size:16px!important}
+.agq-opts{flex-direction:row!important;flex-wrap:wrap!important;gap:8px!important}
+.agq-opts li{flex:0 0 auto}
+.agq-o{border-radius:999px!important;padding:0 16px!important;width:auto!important;background:#fff!important;border:1px solid var(--c-border-strong)!important;box-shadow:none!important;font-weight:600!important}
+.agq-o .agq-ic,.agq-o .agq-ch,.agq-o .agq-s{display:none!important}
+.agq-o.sel{background:#EEF7D2!important;border-color:var(--c-cta-border)!important}
+.agq-in{background:#fff!important;border:1px solid var(--c-border-strong)!important;border-radius:999px!important}
+.agq-in .agq-send{background:#B2D84E!important;color:#1F2A06!important;border:1px solid #7FA62A!important}
+.pb{box-shadow:none!important;border:1px solid var(--c-border-strong)!important;border-radius:999px!important;min-height:56px}
+.pb>svg,.pb>i{display:none}
+.pb .mic{width:48px!important;height:48px!important}
+.sugg a{background:#fff!important;border:1px solid var(--c-border-strong)!important}
+.phone{overflow-x:hidden}.reels{margin:0!important;padding:0!important}
+/* chat header status + inline compact result card */
+.top .st{display:flex;align-items:center;gap:6px;font-size:13px;line-height:18px;color:var(--c-textMuted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top .st i{width:8px;height:8px;border-radius:50%;background:#7FA62A;flex:none}
+.bub .qc{display:flex;gap:10px;align-items:center;margin-top:8px;padding:8px;background:#fff;border-radius:12px}
+.bub .qc img{width:56px;height:56px;border-radius:8px;object-fit:cover;flex:none}
+.bub .qb{display:flex;flex-direction:column;font-size:13px;line-height:18px;min-width:0}
+.bub .qb b{font-size:15px;line-height:20px}.bub .qb div{display:flex;justify-content:space-between;gap:8px;color:var(--c-textMuted)}.bub .qb div b{font-size:13px;color:var(--c-text)}
+.msg .bub:has(.qc){max-width:88%!important}
+.bub .qb{flex:1}.bub .qb div span{white-space:nowrap}
+.agq-o.pri{background:#B2D84E!important;color:#1F2A06!important;border:1px solid #7FA62A!important}
+.phone:has(.agq-o.pri) .btn.dk,.phone:has(.agq-o.pri) .btn.go{background:#fff!important;color:var(--c-primary-700)!important;border:1px solid var(--c-border-strong)!important}
